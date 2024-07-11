@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 20.11.1 # Specify the Node.js version
+    commands:
+      - echo Installing dependencies...
+      - npm install
+  build:
+    commands:
+      - echo Running build...
+      - npm run build
+  post_build:
+    commands:
+      - echo Running tests...
+      - npm test
+artifacts:
+  files:
+    - '**/*'
+  base-directory: dist # Adjust this to your build output directory
