@@ -19,7 +19,7 @@ function App() {
       <h1>Vite + React</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
-          Kowshik TEST count has changed and latest count is {count}
+          Kowshik TEST count has changed V3 and latest count is {count}
         </button>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
